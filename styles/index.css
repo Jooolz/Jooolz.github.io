@@ -1,0 +1,170 @@
+* {
+  font-family: 'Courier New', Courier, monospace;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+#header {
+  margin-top: 4em;
+}
+
+.jumbotron {
+  margin: 0em;
+}
+
+body .container {
+  padding: 2em;
+}
+
+h1 {
+  font-weight: lighter;
+}
+
+#projects {
+  padding-bottom: .65em;
+}
+
+.subheading {
+  text-align: center;
+  margin-bottom: 4em;
+  font-style: italic;
+}
+
+div h2 {
+  font-weight: lighter;
+  text-transform: uppercase;
+  text-align: center;
+  text-decoration: underline;
+  text-underline-offset: .5em;
+  text-decoration-color:coral;
+  text-decoration-style: wavy;
+  padding-top: 2em;
+  padding-bottom: 3em;
+}
+
+div h3 {
+  font-weight: lighter;
+  font-size: 1.5em;
+  margin-bottom: 1em;
+}
+
+#lets-talk {
+  font-size: 3em;
+  font-style: italic;
+  font-variant: small-caps;
+  font-weight: lighter;
+  text-decoration: underline;
+  text-underline-offset: .5em;
+  text-decoration-color:coral;
+  text-decoration-style: dotted;
+
+}
+
+img {
+  border-radius: 2%;
+}
+
+.socials {
+  display: block;
+  margin-bottom: 1em;
+}
+
+body .container-fluid {
+  padding: 0;
+}
+
+body > .container-fluid:nth-child(even) {
+  background-color: lightgray;
+}
+
+#footer {
+  margin: 0;
+} 
+
+#footer-right {
+  float: right;
+  text-align: right;
+}
+
+#footer-left {
+  float: left;
+  text-align: left;
+} 
+
+.parallax-header { 
+  height: 100vh;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url("./../assets/images/thijs-kennis-fMtFyVoY5v4-unsplash.jpg");
+}
+
+.parallax { 
+  height: 25em;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url("./../assets/images/books.jpg");
+}
+
+#cursor {
+  margin-bottom: -4px;
+  width: 2px;
+  opacity: 1;
+  display: inline-block;
+  animation: blink .533s linear 2.8s infinite alternate;
+}
+
+@keyframes blink {
+  0% {
+    opacity: 1;
+  }
+  49% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+.nav {
+	padding: 1em;
+	background-color: #3c3c3c;
+	position: -webkit-sticky;
+}
+
+.nav {
+  color: whitesmoke;
+}
+
+.nav-links {
+  padding: 0 1em;
+  margin: 0;
+  color: white;
+}
+
+a {
+  text-underline-offset: .5em;
+}
+
+.nav a:hover {
+  color: bisque;
+  text-decoration: underline;
+  text-underline-offset: .5em;
+}
+
+.sticky {
+  position: fixed;
+  width: 100%;
+  left: 0;
+  top: 0;
+  z-index: 100;
+  border-top: 0;
+}
