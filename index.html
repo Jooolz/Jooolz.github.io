@@ -24,7 +24,7 @@
     <!-- Landing section -->
     <div id="landing" class="jumbotron jumbotron-fluid parallax-header">
       <div id="header" class="container-fluid">
-        <div class="container">
+        <div class="container section">
           <h1>> 
             <span id="intro"></span><span id="cursor"> |</span>
           </h1>
@@ -44,16 +44,16 @@
     </div>
 
     <!-- About section -->
-    <div class="container-fluid">
-      <div class="container">
+    <div id="about" class="container-fluid">
+      <div class="container section">
         <div class="row">
           <div class="col">
-            <img class="img-fluid mx-auto d-block rounded-circle" alt="avatar" src="./assets/images/IMG_0664.jpg" />
+            <img id="avatar" class="img-fluid mx-auto d-block rounded-circle" alt="avatar" src="./assets/images/IMG_0664.jpg" />
           </div>
         </div>
         <div class="row">
           <div class="col">
-            <h2 id="about">About</h2>
+            <h2>About</h2>
             <p>Growing up I've dabbled mostly with my creative side - digital art and media, design. However, I've always had a deep interest in using computers to do things at my will - playing around in C# or javascript in various game engines, writing text-based adventure games and creating bots. And although I've originally wanted to pursue an artistic career, I found comfort in seeing the creative side of software- where the machine is my canvas, and my mind is the paintbrush.</p>
             
           </div>
@@ -67,9 +67,9 @@
     </div>
 
     <!-- Skills -->
-    <div class="container-fluid">
-      <div class="container">
-        <h2 id="skills">Skills</h2>
+    <div  id="skills" class="container-fluid">
+      <div class="container section">
+        <h2>Skills</h2>
         <p>As a computer science student, I have taken courses that have focused on:</p>
         <div data-aos="fade-right" data-aos-once="true" data-aos-duration="700" data-aos-delay="200">
           <ul>
@@ -118,9 +118,9 @@
     </div>
     
     <!-- Experience -->
-    <div class="container-fluid">
-      <div class="container">
-        <h2 id="experience">Experience</h2>      
+    <div id="experience" class="container-fluid">
+      <div class="container section">
+        <h2>Experience</h2>      
         <div class="row">
           <div class="col">
             <h3>Work</h3>
@@ -151,21 +151,27 @@
     </div>
 
     <!-- Projects -->
-    <div class="container-fluid">
-      <div class="container">
-        <h2 id="projects">Projects</h2>      
+    <div id="projects" class="container-fluid">
+      <div class="container section">
+        <h2 id="project-h1">Projects</h2>      
         <p class="subheading">Some cool, fun, personal things I've created in my spare time!</p>
         <div class="row">
-          <div class="col">
-            <h3>Procedural Terrain Generation</h3>
-            <p>Using GodotEngine and C#, I used Ken Perlin's noise algorithm to generate a pseudo-infinite landscape.</p>
+            <h3 class="project-h3">Procedural Terrain Generation</h3>
+            <p>Written in C#, I used Ken Perlin's noise algorithm to generate my own pseudo-infinite world.</p>
             <div class="row">
-              <div class="col"><img class="img-fluid mx-auto d-block" src="./assets/images/tumblr_pcgtusPYK71vvh0m0o2_500.gif" /></div>
-              <div class="col"><img class="img-fluid mx-auto d-block" src="./assets//images/tumblr_f9a09fbcfb08f3576653110e92d40f50_7416bc89_1280.png"</div>
+              <div class="col"><img class="img-fluid mx-auto d-block" src="./assets/images/tumblr_pcgtusPYK71vvh0m0o2_500.gif" data-toggle="modal" data-target="#myModal" onclick="modalImage(this)"/></div>
+              <div class="col"><img class="img-fluid mx-auto d-block" src="./assets//images/tumblr_f9a09fbcfb08f3576653110e92d40f50_7416bc89_1280.png" data-toggle="modal" data-target="#myModal" onclick="modalImage(this)"</div>
             </div>
           </div>
-          <div class="col">
-           <h3></h3>
+          <div class="row">
+            <div class="col">
+              <h3 class="project-h3">Staying Heartbound (W.I.P)</h3>
+              <p>Utilising my general game development knowledge, I've been creating a small, work-in-progress, game.</p>
+              <div class="row">
+               <div class="col"><img class="img-fluid mx-auto d-block" src="./assets/images/lights.gif" data-toggle="modal" data-target="#myModal" onclick="modalImage(this)"/></div>
+               <div class="col"><img class="img-fluid mx-auto d-block" src="./assets//images/Kid_anim.gif" data-toggle="modal" data-target="#myModal" onclick="modalImage(this)"/></div>
+             </div>
+          </div>
           </div>
         </div>
       </div>
@@ -201,6 +207,22 @@
         </div>
       </div>
     </div>
+
+    <!-- Modal -->
+    <div class="modal fade" id="myModal" role="dialog">
+      <div class="modal-dialog modal-lg">
+      
+        <!-- Modal content-->
+        <div class="modal-content modal-obj">
+          <div class="modal-body">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+            <img id="modal-image" class="img-fluid mx-auto d-block" src=""/>
+          </div>
+        </div>
+        
+      </div>
+    </div>
+    
     
   </body>
   

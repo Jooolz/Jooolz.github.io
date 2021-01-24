@@ -2,7 +2,7 @@ var i = 0;
 var j = 0;
 var txt = 'Hello world!'; 
 var txt2 = ' I\'m Julian';
-var speed = 50; /* The speed/duration of the effect in milliseconds */
+var speed = 50; 
 
 function init() {
   setTimeout(typeWriter, 500);
@@ -26,6 +26,10 @@ function typeWriter2() {
     j++;
     setTimeout(typeWriter2, speed);
   }
+}
+
+function modalImage(e) {
+  document.getElementById("modal-image").src = e.src;
 }
 
 window.onload = init
