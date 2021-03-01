@@ -1,2 +1,3 @@
 # Jooolz.github.io
-Portfolio
+Personal website.
+Built by Julian Bitetto
