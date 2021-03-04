@@ -192,3 +192,11 @@ a {
   z-index: 100;
   border-top: 0;
 }
+
+.project-h3 {
+  clear:both
+}
+
+#projects p {
+  margin-top: 1em;
+}
